@@ -254,3 +254,67 @@ h2 {
     color: #666;
     margin-bottom: 30px;
 }
+
+/* 分页样式 */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.page-info {
+    color: #666;
+    font-size: 14px;
+}
+
+.page-buttons {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.page-link {
+    display: inline-block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #3498db;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.page-link:hover {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+}
+
+.page-current {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.page-buttons .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* 头部导航按钮紧凑 */
+.header .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .user-info .btn {
+    padding: 6px 14px;
+    font-size: 13px;
+}
